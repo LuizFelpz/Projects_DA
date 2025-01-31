@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1869a6a9c9604019fd53997a21e082fd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1869a6a9c9604019fd53997a21e082fd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1869a6a9c9604019fd53997a21e082fd = L.map(
+                "map_1869a6a9c9604019fd53997a21e082fd",
+                {
+                    center: [40.794722, -73.86416],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    scaleControl: true,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e68cb3e8833ea395d296222d9c35950a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e68cb3e8833ea395d296222d9c35950a.addTo(map_1869a6a9c9604019fd53997a21e082fd);
+        
+    
+            var marker_e63a52933689770038ec232c381f99b8 = L.marker(
+                [40.91306, -73.78158],
+                {}
+            ).addTo(map_1869a6a9c9604019fd53997a21e082fd);
+        
+    
+            var icon_7980b922e2ba8ba9bfc3e073bb4527c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_e63a52933689770038ec232c381f99b8.setIcon(icon_7980b922e2ba8ba9bfc3e073bb4527c2);
+        
+    
+        var popup_edd78beb84279356f1cdbdc9d87c3dbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b71264b8aa20b0e426f9add11271094a = $(`<div id="html_b71264b8aa20b0e426f9add11271094a" style="width: 100.0%; height: 100.0%;">Bronx / U$2500</div>`)[0];
+                popup_edd78beb84279356f1cdbdc9d87c3dbc.setContent(html_b71264b8aa20b0e426f9add11271094a);
+            
+        
+
+        marker_e63a52933689770038ec232c381f99b8.bindPopup(popup_edd78beb84279356f1cdbdc9d87c3dbc)
+        ;
+
+        
+    
+    
+            var marker_80a21f60a97fca5b9253877686f5e2bd = L.marker(
+                [40.7389, -73.85676],
+                {}
+            ).addTo(map_1869a6a9c9604019fd53997a21e082fd);
+        
+    
+            var icon_5e0bd2345b945de8a8909f2d5b4257d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_80a21f60a97fca5b9253877686f5e2bd.setIcon(icon_5e0bd2345b945de8a8909f2d5b4257d8);
+        
+    
+        var popup_197319b9863e588b6adcfb6de5605fc1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3ed805427f35657066f0bb264c963c2 = $(`<div id="html_e3ed805427f35657066f0bb264c963c2" style="width: 100.0%; height: 100.0%;">Brooklyn / U$10000</div>`)[0];
+                popup_197319b9863e588b6adcfb6de5605fc1.setContent(html_e3ed805427f35657066f0bb264c963c2);
+            
+        
+
+        marker_80a21f60a97fca5b9253877686f5e2bd.bindPopup(popup_197319b9863e588b6adcfb6de5605fc1)
+        ;
+
+        
+    
+    
+            var marker_e91900904c2baeffa7a7dcd3c1c58ee6 = L.marker(
+                [40.87665, -73.90855],
+                {}
+            ).addTo(map_1869a6a9c9604019fd53997a21e082fd);
+        
+    
+            var icon_6d13e2adbdb2255762125743c482a877 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e91900904c2baeffa7a7dcd3c1c58ee6.setIcon(icon_6d13e2adbdb2255762125743c482a877);
+        
+    
+        var popup_2bd1006e731e69cfd274dbddfd2cd6d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6f080b56e12979e34bae97672d0d219 = $(`<div id="html_c6f080b56e12979e34bae97672d0d219" style="width: 100.0%; height: 100.0%;">Manhattan / U$10000</div>`)[0];
+                popup_2bd1006e731e69cfd274dbddfd2cd6d3.setContent(html_c6f080b56e12979e34bae97672d0d219);
+            
+        
+
+        marker_e91900904c2baeffa7a7dcd3c1c58ee6.bindPopup(popup_2bd1006e731e69cfd274dbddfd2cd6d3)
+        ;
+
+        
+    
+    
+            var marker_8c74ec13868e1bfba12e5bf7a5343bd2 = L.marker(
+                [40.79721, -73.71299],
+                {}
+            ).addTo(map_1869a6a9c9604019fd53997a21e082fd);
+        
+    
+            var icon_8f49987198f658ed7ab541a9e87c8477 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_8c74ec13868e1bfba12e5bf7a5343bd2.setIcon(icon_8f49987198f658ed7ab541a9e87c8477);
+        
+    
+        var popup_8d5a5d329e820f4364fb5e66120e125c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee564be0bf13e34848332ebd873ba973 = $(`<div id="html_ee564be0bf13e34848332ebd873ba973" style="width: 100.0%; height: 100.0%;">Queens / U$10000</div>`)[0];
+                popup_8d5a5d329e820f4364fb5e66120e125c.setContent(html_ee564be0bf13e34848332ebd873ba973);
+            
+        
+
+        marker_8c74ec13868e1bfba12e5bf7a5343bd2.bindPopup(popup_8d5a5d329e820f4364fb5e66120e125c)
+        ;
+
+        
+    
+    
+            var marker_17653d2ce45b347a2032bcbd9902ed5a = L.marker(
+                [40.64779, -74.06092],
+                {}
+            ).addTo(map_1869a6a9c9604019fd53997a21e082fd);
+        
+    
+            var icon_fe93f27850f5338ba9849c7f465e482a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_17653d2ce45b347a2032bcbd9902ed5a.setIcon(icon_fe93f27850f5338ba9849c7f465e482a);
+        
+    
+        var popup_2bae534f5011742537af307e571ae99d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc00c66cce5e37a789b33cd19f553e4d = $(`<div id="html_dc00c66cce5e37a789b33cd19f553e4d" style="width: 100.0%; height: 100.0%;">Staten Island / U$5000</div>`)[0];
+                popup_2bae534f5011742537af307e571ae99d.setContent(html_dc00c66cce5e37a789b33cd19f553e4d);
+            
+        
+
+        marker_17653d2ce45b347a2032bcbd9902ed5a.bindPopup(popup_2bae534f5011742537af307e571ae99d)
+        ;
+
+        
+    
+</script>
+</html>
